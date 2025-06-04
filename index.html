@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>属性魔法支援ツール</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>属性魔法支援ツール</h1>
+        
+        <!-- 属性ボタン -->
+        <div class="attribute-buttons">
+            <div class="attribute-btn active disabled" data-attribute="mana">
+                <img src="./icons/icon_mana.png" alt="魔力" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <div style="display:none; width:40px; height:40px; background:#ddd; border-radius:4px; margin-bottom:5px; line-height:40px; font-size:10px;">魔力</div>
+                <span>魔力</span>
+            </div>
+            <div class="attribute-btn" data-attribute="fire">
+                <img src="./icons/icon_fire.png" alt="炎" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <div style="display:none; width:40px; height:40px; background:#ddd; border-radius:4px; margin-bottom:5px; line-height:40px; font-size:10px;">炎</div>
+                <span>炎</span>
+            </div>
+            <div class="attribute-btn" data-attribute="thunder">
+                <img src="./icons/icon_thunder.png" alt="雷" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <div style="display:none; width:40px; height:40px; background:#ddd; border-radius:4px; margin-bottom:5px; line-height:40px; font-size:10px;">雷</div>
+                <span>雷</span>
+            </div>
+            <div class="attribute-btn" data-attribute="light">
+                <img src="./icons/icon_light.png" alt="聖" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <div style="display:none; width:40px; height:40px; background:#ddd; border-radius:4px; margin-bottom:5px; line-height:40px; font-size:10px;">聖</div>
+                <span>聖</span>
+            </div>
+        </div>
+
+        <!-- 魔法表示エリア -->
+        <div id="magic-display"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
